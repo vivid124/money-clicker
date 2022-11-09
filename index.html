@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <html>http://127.0.0.1:5500/index.html</html>
 <title>money clicker 2.0</title>
 <link rel="stylesheet" href="style.css">
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"> </script>
@@ -49,7 +48,6 @@
    }
   }
   function updatecount(){
-   update_upgrades();
    if(Cookies.get("clicker") != null && Cookies.get("clicker") != "undefined"){
        var clicker1 =JSON.parse(Cookies.get("clicker"));
        for(i in clicker.upgrades){
@@ -60,6 +58,7 @@
        }
        clicker = clicker1;
    }
+       update_upgrades();
    setInterval(() => {
        for(i in clicker.upgrades){
            clicker.dollars+=clicker.upgrades[i].amount*clicker.upgrades[i].dps/20
