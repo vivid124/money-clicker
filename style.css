@@ -2,7 +2,7 @@
 button{
     background-color:rgb(150, 226, 150);
     color:rgb(3, 3, 3);
-    font-size: 150px;
+    font-size: 100px;
     border-radius: 200px;
     border-width: 20px;
     border-color:rgb(53, 53, 53);
@@ -10,7 +10,7 @@ button{
   
  h1{
     color:rgb(118, 243, 118);
-    font-size:115px;
+    font-size:100px;
  }
  body{
     background-color:black;
