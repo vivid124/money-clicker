@@ -78,7 +78,7 @@
    document.querySelector("#dollars").innerHTML="you have"+String(clicker.dollars).split(".")[0]+"dollars"
    delay++;
    if (delay >=40){
-       Cookies.set("clicker",JSON.stringify(clicker), {expires:10})
+       Cookies.set("clicker",JSON.stringify(clicker), {expires:0})
        delay = 0;
    }
    },50);
