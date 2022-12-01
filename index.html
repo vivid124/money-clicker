@@ -42,6 +42,13 @@
         dps:1000,
         name:"jumbo money printer"
        },
+             extra_jumbo_money_printer:{
+        amount:0,
+        cost:10000000,
+        dps:1000000,
+        name:" extra jumbo money printer"
+       },
+         
    
   
    }
@@ -82,7 +89,7 @@
    document.querySelector("#dollars").innerHTML="you have"+String(clicker.dollars).split(".")[0]+"dollars"
    delay++;
    if (delay >=40){
-       Cookies.set("clicker",JSON.stringify(clicker), {expires:0})
+       Cookies.set("clicker",JSON.stringify(clicker), {expires:10})
        delay = 0;
    }
    },50);
